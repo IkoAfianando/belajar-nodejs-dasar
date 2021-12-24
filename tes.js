@@ -1,4 +1,4 @@
-class FizzBuzz{
+class FizzBuzz {
     constructor(name) {
         this.name = name;
     }
@@ -9,22 +9,24 @@ class FizzBuzz{
             const data2 = i % 3 === 0;
             const data3 = i % 5 === 0;
             if(data1) {
-                console.log(`FizzBuzz ${i}`);
+                console.info(`FizzBuzz ${i}`);
             }else if(data2) {
-                console.log(`Fizz ${i}`);
+                console.info(`Fizz ${i}`);
             }else if(data3) {
-                console.log(`Buzz ${i}`);
+                console.info(`Buzz ${i}`);
             }else {
-                console.log(i);
+                console.info(i);
             }
         }
     }
 
     sayHello(name) {
-        return `Hello ${name}, MY Name is ${this.name}`;
+        return `Hello ${name}, My Name is ${this.name}`;
     }
 }
 
 const fizzBuzz = new FizzBuzz("Iko Afianando");
-fizzBuzz.fizzBuzz(1000);
+fizzBuzz.fizzBuzz(100);
 console.log(fizzBuzz.sayHello("Joko"));
+
+module.exports = FizzBuzz;
