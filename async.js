@@ -1,10 +1,10 @@
 function samplePromise() {
-    return Promise.resolve("Iko");
+    return Promise.resolve("Iko Afianando");
 }
 
-async function run(){
-    const name = await samplePromise();
-    console.info(name);
+async function run() {
+    const run = await samplePromise();
+    console.info(run);
 }
 
 run();
